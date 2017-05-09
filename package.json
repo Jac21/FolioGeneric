@@ -4,7 +4,8 @@
   "description": "Generic portfolio site template for the multi-faceted developer",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "precache": "sw-precache --verbose --config=sw-precache-config.js"
   },
   "author": "Jeremy A. Cantu",
   "license": "ISC",
