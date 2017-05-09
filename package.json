@@ -1,0 +1,11 @@
+{
+  "name": "foliogeneric",
+  "version": "1.0.0",
+  "description": "Generic portfolio site template for the multi-faceted developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Jeremy A. Cantu",
+  "license": "ISC"
+}
