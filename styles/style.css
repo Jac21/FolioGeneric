@@ -8,7 +8,7 @@
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  line-height: 3;
+  height: 50vh;
   padding: 10vw 2em;
   text-align: center;
 }
@@ -19,7 +19,7 @@
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  line-height: 1;
+  height: 50vh;
   padding: 10vw 1em;
   text-align: center;
 }
@@ -35,9 +35,9 @@
 
 .headshot-photo {
   display: inline-block;
-  height: 150px;
+  height: 120px;
   vertical-align: top;
-  width: 220px;
+  width: 120px;
   border-radius: 100px;
   border: 1px solid white;
 
@@ -99,7 +99,7 @@ header a:hover {
 }
 
 .switch label .lever {
-	background-color: #84c7c1;
+	background-color: #58ACE3 !important;
 	width: 55px;
 }
 
@@ -110,7 +110,7 @@ header a:hover {
 }
 
 .switch label .lever::after {
-	background-color: #3498db;
+	background-color: #3498db !important;
 }
 
 .switch label input[type="checkbox"]:checked + .lever::after {

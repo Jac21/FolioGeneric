@@ -22,6 +22,11 @@
 				      "caption":"Demo Photo",
 				      "url":"dist/images/photographer/photos/demo-photo-three.jpeg",
 				      "alt":"Demo Photo Three"
+				   },
+				   {
+				      "caption":"Demo Photo",
+				      "url":"dist/images/photographer/photos/demo-photo-four.jpeg",
+				      "alt":"Demo Photo Four"
 				   }
 				];
 				
