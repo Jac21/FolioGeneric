@@ -14,7 +14,7 @@ Usage
 
 Resources Used
 -------------
-[Materialize CSS](http://materializecss.com/)
-[AngularJS](https://angularjs.org/)
-[gulp.js](http://gulpjs.com/)
-[sw-precache](https://github.com/GoogleChrome/sw-precache)
+- [Materialize CSS](http://materializecss.com/)
+- [AngularJS](https://angularjs.org/)
+- [gulp.js](http://gulpjs.com/)
+- [sw-precache](https://github.com/GoogleChrome/sw-precache)
