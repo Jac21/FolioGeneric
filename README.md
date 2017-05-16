@@ -7,4 +7,7 @@ Full-fledged multi-disciplinary portfolio site, for the developers that like to 
 
 Usage 
 ----
-Coming soon...
+1. *git clone* this repository.
+2. Navigate to the parent directory, and *npm install*
+3. Ensuring you have Gulp 3.9.0 installed gloablly on your machine (i.e., *npm install gulp@3.9.0*), simply run *gulp* in the same parent directory to kick off browser-sync and the associated content processing.
+4. After any content changes, use *npm run precache* to kick off the service-worker precache process to refresh your site's associated service worker file.
