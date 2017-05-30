@@ -6,7 +6,7 @@
         "type": "png",
         "sizes": "512x512"
       }],
-  "start_url": "/#/developer",
+  "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait",
