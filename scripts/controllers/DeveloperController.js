@@ -14,6 +14,23 @@
 				  $location.path(path);
 				};
 
+				// page specific objects
+				$scope.developerHeadshot = {
+					"url":"dist/images/developer/headshot-dev.png",
+					"alt":"developer headshot"
+				};
+
+				$scope.ghostButtonLink = {
+					"url":"#"
+				};
+
+				$scope.fabButtonLinks = {
+					"email":"#",
+					"file":"#",
+					"github":"#",
+					"linkedin":"#"
+				};
+
 				// utility function to add active css class to target element
 				$scope.activate = function(event) {
 					$(event.target).addClass('active');

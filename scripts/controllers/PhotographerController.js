@@ -6,6 +6,16 @@
 				// set page class
 				$scope.pageClass = 'photographer';
 
+				// page specific objects
+				$scope.photographerHeadshot = {
+					"url":"dist/images/photographer/headshot-photo.png",
+					"alt":"photographer headshot"
+				};
+
+				$scope.ghostButtonLink = {
+					"url":"#"
+				};
+
 				// image data array
 				$scope.images = [
 					{
