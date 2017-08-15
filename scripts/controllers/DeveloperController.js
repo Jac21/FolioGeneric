@@ -24,6 +24,9 @@
 					"url":"#"
 				};
 
+				$scope.projectSectionHeaderText = "Selection of Projects";
+				$scope.presentationSectionHeaderText = "Talks and Presentations";
+
 				$scope.fabButtonLinks = {
 					"email":"#",
 					"file":"#",

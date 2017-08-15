@@ -16,6 +16,9 @@
 					"url":"#"
 				};
 
+				$scope.photoSelectionHeaderText = "Selection of Photos";
+				$scope.photoShootHeaderText = "Photo Shoots";
+
 				// image data array
 				$scope.images = [
 					{
