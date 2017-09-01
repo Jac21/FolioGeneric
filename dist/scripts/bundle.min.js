@@ -36,13 +36,9 @@
 
 			$urlRouterProvider.otherwise("/developer");
 
-			// Uncomment the following to allow for HTML5 Mode and remove the Angular hash from the URL
-			// Ensure associated configuration is also uncommented within index.html
-			/*
 			$locationProvider.html5Mode({
 				enabled: true,
 				requireBase: true
 			});
-			*/ 
 		});
 })();
