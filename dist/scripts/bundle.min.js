@@ -36,9 +36,11 @@
 
 			$urlRouterProvider.otherwise("/developer");
 
-			$locationProvider.html5Mode({
-				enabled: true,
-				requireBase: true
-			});
+			/* Uncomment the below, as well as the base href in index.html, to use HTML5 pathing
+			(without the /#/) on your particular webpage */
+			// $locationProvider.html5Mode({
+			// 	enabled: true,
+			// 	requireBase: true
+			// });
 		});
 })();
