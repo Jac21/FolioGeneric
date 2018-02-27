@@ -1,3 +1,48 @@
+/* Fonts and Textual concerns */
+
+html {
+  color: rgba(0, 0, 0, .87);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.5
+}
+
+@font-face {
+  font-family: Roboto;
+  font-weight: 200;
+  src: url(../fonts/roboto/Roboto-Thin.eot?#iefix) format("embedded-opentype"), url(../fonts/roboto/Roboto-Thin.woff2) format("woff2"), url(../fonts/roboto/Roboto-Thin.woff) format("woff"), url(../fonts/roboto/Roboto-Thin.ttf) format("truetype")
+}
+
+@font-face {
+  font-family: Roboto;
+  font-weight: 300;
+  src: url(../fonts/roboto/Roboto-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/roboto/Roboto-Light.woff2) format("woff2"), url(../fonts/roboto/Roboto-Light.woff) format("woff"), url(../fonts/roboto/Roboto-Light.ttf) format("truetype")
+}
+
+@font-face {
+  font-family: Roboto;
+  font-weight: 400;
+  src: url(../fonts/roboto/Roboto-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/roboto/Roboto-Regular.woff2) format("woff2"), url(../fonts/roboto/Roboto-Regular.woff) format("woff"), url(../fonts/roboto/Roboto-Regular.ttf) format("truetype")
+}
+
+@font-face {
+  font-family: Roboto;
+  font-weight: 500;
+  src: url(../fonts/roboto/Roboto-Medium.eot?#iefix) format("embedded-opentype"), url(../fonts/roboto/Roboto-Medium.woff2) format("woff2"), url(../fonts/roboto/Roboto-Medium.woff) format("woff"), url(../fonts/roboto/Roboto-Medium.ttf) format("truetype")
+}
+
+@font-face {
+  font-family: Roboto;
+  font-weight: 700;
+  src: url(../fonts/roboto/Roboto-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/roboto/Roboto-Bold.woff2) format("woff2"), url(../fonts/roboto/Roboto-Bold.woff) format("woff"), url(../fonts/roboto/Roboto-Bold.ttf) format("truetype")
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /*
   Header element styles
 */
@@ -40,7 +85,6 @@
   width: 120px;
   border-radius: 100px;
   border: 1px solid white;
-
 }
 
 header h1 {
@@ -69,7 +113,7 @@ header a {
 }
 
 header a:hover {
-  background:  #3498db;
+  background: #3498db;
   color: white;
 }
 
@@ -78,12 +122,12 @@ header a:hover {
 */
 
 .switch {
-	margin: 1em;
-	text-align: center;
+  margin: 1em;
+  text-align: center;
 }
 
 .switch label {
-	font-size: 18px;
+  font-size: 18px;
 }
 
 @media all and (min-width: 768px) {
@@ -99,8 +143,8 @@ header a:hover {
 }
 
 .switch label .lever {
-	background-color: #58ACE3 !important;
-	width: 55px;
+  background-color: #58ACE3 !important;
+  width: 55px;
 }
 
 @media all and (max-width: 320px) {
@@ -110,24 +154,25 @@ header a:hover {
 }
 
 .switch label .lever::after {
-	background-color: #3498db !important;
+  background-color: #3498db !important;
 }
 
-.switch label input[type="checkbox"]:checked + .lever::after {
-	left: 37px;
+.switch label input[type="checkbox"]:checked+.lever::after {
+  left: 37px;
 }
 
-.switch label .lever:hover { 
-  box-shadow: 0 1px 3px 1px rgba(0,0,0,0.4),0 0 0 15px rgba(0,0,0,0.08);
+.switch label .lever:hover {
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08);
 }
 
 /*
   Card styles
 */
 
-
 @media all and (max-width: 768px) {
-  .card.large .card-image, .card.medium .card-image, .card.small .card-image {
+  .card.large .card-image,
+  .card.medium .card-image,
+  .card.small .card-image {
     max-height: 57%;
   }
 }
@@ -141,8 +186,9 @@ header a:hover {
 .more-info-link {
   cursor: pointer;
 }
- 
+
 /* http://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
+
 .card-reveal a {
   position: relative;
   color: #ffab40;
@@ -174,7 +220,6 @@ header a:hover {
   .card-reveal a {
     border-bottom: solid 2px;
   }
-
   .card-reveal a:hover:before {
     visibility: hidden;
   }
@@ -274,7 +319,6 @@ header a:hover {
   .blog-container a {
     border-bottom: solid 2px;
   }
-
   .blog-container a:hover:before {
     visibility: hidden;
   }
@@ -284,7 +328,7 @@ header a:hover {
   opacity: 0.7;
 }
 
-.responsive-img-text > p {
+.responsive-img-text>p {
   text-align: center;
   opacity: 0.6;
   font-size: 0.9em;
@@ -299,7 +343,7 @@ header a:hover {
   opacity: 0.9;
 }
 
-.talk-div > p {
+.talk-div>p {
   text-align: center;
   opacity: 0.6;
   font-size: 0.9em;
@@ -401,7 +445,7 @@ header a:hover {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   border: 0;
 }
 
@@ -420,7 +464,6 @@ header a:hover {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
@@ -430,7 +473,6 @@ header a:hover {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
@@ -439,4 +481,10 @@ header a:hover {
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+}
+
+/* Temporary Materialize local fixes */
+
+.card .card-action {
+  background-color: inherit;
 }
