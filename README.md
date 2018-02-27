@@ -1,5 +1,7 @@
 # [FolioGeneric](https://jac21.github.io/FolioGeneric)
->- Live example site: https://jac21.github.io/FolioGeneric
+[![CircleCI](https://circleci.com/gh/Jac21/FolioGeneric/tree/master.svg?style=badge)](https://circleci.com/gh/Jac21/FolioGeneric/tree/master)
+
+## Live example site: https://jac21.github.io/FolioGeneric
 
 Features
 -------
