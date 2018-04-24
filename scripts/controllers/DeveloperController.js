@@ -1,4 +1,4 @@
-(function() {
+(function () {
   "use strict";
 
   angular // eslint-disable-line no-undef
@@ -7,12 +7,12 @@
       "$scope",
       "$location",
       "$anchorScroll",
-      function($scope, $location, $anchorScroll) {
+      function ($scope, $location, $anchorScroll) {
         // set page class
         $scope.pageClass = "developer";
 
         // utility function for linking between views
-        $scope.go = function(path) {
+        $scope.go = function (path) {
           $location.path(path);
         };
 
@@ -37,13 +37,13 @@
         };
 
         // utility function to add active css class to target element
-        $scope.activate = function(event) {
+        $scope.activate = function (event) {
           $(event.target).addClass("active"); // eslint-disable-line no-undef
         };
 
         // utility function to set viewport to the top of the page
         // on element click
-        $scope.backToTop = function() {
+        $scope.backToTop = function () {
           $anchorScroll();
         };
 
@@ -53,6 +53,13 @@
         var instance = M.FloatingActionButton.init(elem, {
           direction: "left",
           hoverEnabled: false
+        });
+
+        // initialize materialbox
+        var elem = document.querySelectorAll(".materialboxed");
+        var instance = M.Materialbox.init(elem, {
+          inDuration: 275,
+          outDuration: 200
         });
 
         // initialize blog container wrapper style
