@@ -78,6 +78,13 @@ body {
   border: 1px solid white;
 }
 
+@media all and (min-width: 48em) {
+  .headshot-dev {
+    height: 110pt;
+    width: 110pt;
+  }
+}
+
 .headshot-photo {
   display: inline-block;
   height: 120px;
