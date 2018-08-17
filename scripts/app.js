@@ -1,14 +1,13 @@
 // wrap in an IIFE to remove variables from global scope
-(function() {
+(function () {
   "use strict";
 
   angular
     .module("folioGenericApp", ["ui.router", "responsive-images"]) // eslint-disable-line no-undef
-    .config(function(
+    .config(function (
       $stateProvider,
       $urlRouterProvider,
-      $compileProvider,
-      $locationProvider
+      $compileProvider
     ) {
       $compileProvider.debugInfoEnabled(false);
 
@@ -40,12 +39,5 @@
         });
 
       $urlRouterProvider.otherwise("/developer");
-
-      /* Uncomment the below, as well as the base href in index.html, to use HTML5 pathing
-			(without the /#/) on your particular webpage */
-      // $locationProvider.html5Mode({
-      // 	enabled: true,
-      // 	requireBase: true
-      // });
     });
 })();
