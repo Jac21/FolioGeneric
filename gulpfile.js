@@ -25,9 +25,9 @@ var config = {
       "scripts/directives/responsiveImage.js"
     ],
     libJavascript: [
-      "scripts/lib/angular.min.js",
-      "scripts/lib/angular-ui-router.min.js",
-      "scripts/lib/materialize.min.js"
+      'node_modules/angular/angular.min.js',
+      'node_modules/@uirouter/angularjs/release/angular-ui-router.min.js',
+      'node_modules/materialize-css/dist/js/materialize.min.js'
     ],
     styles: "styles/*.css"
   }
@@ -45,7 +45,7 @@ var destConfig = {
 };
 
 // browser-sync task
-gulp.task("browser-sync", function() {
+gulp.task("browser-sync", function () {
   browserSync.init({
     files: [config.paths.files],
     browser: config.browser,
@@ -58,7 +58,7 @@ gulp.task("browser-sync", function() {
 });
 
 // image task
-gulp.task("images", function() {
+gulp.task("images", function () {
   return gulp
     .src(config.paths.images)
     .pipe(imagemin({ progressive: true }))
@@ -66,7 +66,7 @@ gulp.task("images", function() {
 });
 
 // Scripts task
-gulp.task("scripts", ["lib-scripts"], function() {
+gulp.task("scripts", ["lib-scripts"], function () {
   return gulp
     .src(config.paths.applicationJavascript)
     .pipe(sourcemaps.init())
@@ -77,7 +77,7 @@ gulp.task("scripts", ["lib-scripts"], function() {
 });
 
 // Library scripts task
-gulp.task("lib-scripts", function() {
+gulp.task("lib-scripts", function () {
   return gulp
     .src(config.paths.libJavascript)
     .pipe(concat("lib-bundle.js"))
@@ -86,7 +86,7 @@ gulp.task("lib-scripts", function() {
 });
 
 // linting task
-gulp.task("lint", function() {
+gulp.task("lint", function () {
   return gulp
     .src(config.paths.applicationJavascript)
     .pipe(lint({ config: "eslint.config.json" }))
@@ -94,7 +94,7 @@ gulp.task("lint", function() {
 });
 
 //uncss-ing task
-gulp.task("uncss", function() {
+gulp.task("uncss", function () {
   return gulp
     .src(config.paths.styles)
     .pipe(
@@ -106,7 +106,7 @@ gulp.task("uncss", function() {
 });
 
 // crass, used for CSS minification
-gulp.task("crass", function() {
+gulp.task("crass", function () {
   return gulp
     .src(config.paths.styles)
     .pipe(crass({ pretty: false }))
@@ -114,7 +114,7 @@ gulp.task("crass", function() {
 });
 
 // watch task for any html/js changes
-gulp.task("watch", function() {
+gulp.task("watch", function () {
   gulp.watch(config.paths.applicationJavascript, ["lint"]);
   gulp.watch(config.paths.applicationJavascript, ["scripts"]);
   gulp.watch(config.paths.libJavascript, ["lib-scripts"]);
@@ -123,4 +123,4 @@ gulp.task("watch", function() {
 });
 
 // default gulp tasks
-gulp.task("default", ["browser-sync", "watch"], function() {});
+gulp.task("default", ["browser-sync", "watch"], function () { });
